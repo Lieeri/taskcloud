@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TaskCloud: estrutura HTML demonstrativa de gestão de tarefas empresariais.">
+  <title>Acompanhamento de progresso | TaskCloud</title>
+</head>
+<body>
+  <a href="#conteudo">Pular para o conteúdo</a>
+  <header class="cabecalho"><p><strong>TaskCloud</strong></p><p>Gestão de tarefas empresariais</p></header>
+  <aside class="menu-lateral"><nav aria-label="Navegação principal"><ul><li><a href="index.html">Login</a></li><li><a href="painel.html">Painel principal</a></li><li><a href="perfil.html">Perfil do funcionário</a></li><li><a href="funcionarios.html">Funcionários</a></li><li><a href="funcionario-cadastro.html">Cadastrar funcionário</a></li><li><a href="tarefa-cadastro.html">Cadastrar tarefa</a></li><li><a href="tarefas.html">Tarefas</a></li><li><a href="tarefa-detalhes.html">Detalhes da tarefa</a></li><li><a href="progresso.html" aria-current="page">Acompanhamento de progresso</a></li></ul></nav></aside>
+  <main id="conteudo">
+    <h1>Acompanhamento de progresso</h1>
+    <p><strong>Protótipo HTML — dados fictícios.</strong> Os formulários estão desativados e não salvam dados. As páginas demonstram diferentes perfis, sem controle de acesso nesta etapa.</p>
+    <section><h2>Visão da equipe</h2><p>Média de conclusão das 3 tarefas: <strong>53,3%</strong>. Uma tarefa concluída de três (33,3%).</p><progress value="160" max="300" aria-label="Média de conclusão da equipe">53,3%</progress><dl><dt>Ana Exemplo — média de 2 tarefas</dt><dd><progress value="80" max="100" aria-label="Média de Ana">80%</progress> 80%</dd><dt>Bruno Demonstração — 1 tarefa</dt><dd><progress value="0" max="100" aria-label="Média de Bruno">0%</progress> 0%</dd></dl></section><section><h2>Acompanhamento das entregas</h2><table><caption>Tarefas da empresa fictícia Nuvem Exemplo</caption><thead><tr><th scope="col">ID</th><th scope="col">Título</th><th scope="col">Responsável</th><th scope="col">Prioridade</th><th scope="col">Status</th><th scope="col">Progresso</th><th scope="col">Prazo</th></tr></thead><tbody><tr><th scope="row">TC-001</th><td><a href="tarefa-detalhes.html#tarefa-tc-001">Preparar relatório mensal</a></td><td>Ana Exemplo</td><td>Alta</td><td>Em andamento</td><td><progress value="60" max="100" aria-label="Progresso de TC-001">60%</progress> 60%</td><td><time datetime="2026-11-20">2026-11-20</time></td></tr><tr><th scope="row">TC-002</th><td><a href="tarefa-detalhes.html#tarefa-tc-002">Revisar documentação</a></td><td>Bruno Demonstração</td><td>Média</td><td>Pendente</td><td><progress value="0" max="100" aria-label="Progresso de TC-002">0%</progress> 0%</td><td><time datetime="2026-11-25">2026-11-25</time></td></tr><tr><th scope="row">TC-003</th><td><a href="tarefa-detalhes.html#tarefa-tc-003">Organizar arquivos</a></td><td>Ana Exemplo</td><td>Baixa</td><td>Concluída</td><td><progress value="100" max="100" aria-label="Progresso de TC-003">100%</progress> 100%</td><td><time datetime="2026-11-10">2026-11-10</time></td></tr></tbody></table></section>
+  </main>
+  <footer><p>TaskCloud — Projeto acadêmico. Etapa 1: HTML.</p></footer>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TaskCloud: estrutura HTML demonstrativa de gestão de tarefas empresariais.">
+  <title>Cadastrar tarefa | TaskCloud</title>
+</head>
+<body>
+  <a href="#conteudo">Pular para o conteúdo</a>
+  <header class="cabecalho"><p><strong>TaskCloud</strong></p><p>Gestão de tarefas empresariais</p></header>
+  <aside class="menu-lateral"><nav aria-label="Navegação principal"><ul><li><a href="index.html">Login</a></li><li><a href="painel.html">Painel principal</a></li><li><a href="perfil.html">Perfil do funcionário</a></li><li><a href="funcionarios.html">Funcionários</a></li><li><a href="funcionario-cadastro.html">Cadastrar funcionário</a></li><li><a href="tarefa-cadastro.html" aria-current="page">Cadastrar tarefa</a></li><li><a href="tarefas.html">Tarefas</a></li><li><a href="tarefa-detalhes.html">Detalhes da tarefa</a></li><li><a href="progresso.html">Acompanhamento de progresso</a></li></ul></nav></aside>
+  <main id="conteudo">
+    <h1>Cadastrar tarefa</h1>
+    <p><strong>Protótipo HTML — dados fictícios.</strong> Os formulários estão desativados e não salvam dados. As páginas demonstram diferentes perfis, sem controle de acesso nesta etapa.</p>
+    <p>Empresa, criador e usuário que atribuiu serão obtidos da sessão no servidor. Área prevista para administradores e gestores.</p><form method="post"><fieldset disabled><legend>Demonstração — envio disponível na etapa PHP</legend><p><label for="titulo">Título</label><br><input type="text" id="titulo" name="titulo" required maxlength="160"></p><p><label for="descricao">Descrição</label><br><textarea id="descricao" name="descricao" rows="5" required maxlength="5000"></textarea></p><p><label for="responsavel_id">Funcionário responsável</label><br><select id="responsavel_id" name="responsavel_id"><option value="3">Ana Exemplo</option><option value="4">Bruno Demonstração</option></select></p><p><label for="prazo_entrega">Prazo de entrega</label><br><input type="date" id="prazo_entrega" name="prazo_entrega" required></p><p><label for="prioridade">Prioridade</label><br><select id="prioridade" name="prioridade"><option value="baixa">Baixa</option><option value="media">Média</option><option value="alta">Alta</option></select></p><p><label for="status">Status</label><br><select id="status" name="status"><option value="pendente">Pendente</option><option value="em_andamento">Em andamento</option><option value="concluida">Concluída</option></select></p><p><label for="porcentagem_conclusao">Porcentagem de conclusão</label><br><input type="number" id="porcentagem_conclusao" name="porcentagem_conclusao" min="0" max="100" step="1" value="0" required></p><button type="submit">Cadastrar tarefa</button></fieldset></form>
+  </main>
+  <footer><p>TaskCloud — Projeto acadêmico. Etapa 1: HTML.</p></footer>
+</body>
+</html>
