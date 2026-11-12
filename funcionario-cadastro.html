@@ -5,16 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="TaskCloud: estrutura HTML demonstrativa de gestão de tarefas empresariais.">
   <title>Cadastrar funcionário | TaskCloud</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/onca-taskcloud.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="pagina-funcionario-cadastro">
   <a href="#conteudo">Pular para o conteúdo</a>
-  <header class="cabecalho"><p><strong>TaskCloud</strong></p><p>Gestão de tarefas empresariais</p></header>
+  <header class="cabecalho"><p><img class="marca-onca" src="assets/img/onca-taskcloud.svg" alt="" width="40" height="40"><strong>TaskCloud</strong></p><p>Gestão de tarefas empresariais</p></header>
   <aside class="menu-lateral"><nav aria-label="Navegação principal"><ul><li><a href="index.html">Login</a></li><li><a href="painel.html">Painel principal</a></li><li><a href="perfil.html">Perfil do funcionário</a></li><li><a href="funcionarios.html">Funcionários</a></li><li><a href="funcionario-cadastro.html" aria-current="page">Cadastrar funcionário</a></li><li><a href="tarefa-cadastro.html">Cadastrar tarefa</a></li><li><a href="tarefas.html">Tarefas</a></li><li><a href="tarefa-detalhes.html">Detalhes da tarefa</a></li><li><a href="progresso.html">Acompanhamento de progresso</a></li></ul></nav></aside>
   <main id="conteudo">
     <h1>Cadastrar funcionário</h1>
-    <p><strong>Protótipo HTML — dados fictícios.</strong> Os formulários estão desativados e não salvam dados. As páginas demonstram diferentes perfis, sem controle de acesso nesta etapa.</p>
-    <p>Área prevista para o administrador. Empresa vinculada à sessão futura: Nuvem Exemplo.</p><form method="post"><fieldset disabled><legend>Demonstração — envio disponível na etapa PHP</legend><p><label for="nome">Nome completo</label><br><input type="text" id="nome" name="nome" required maxlength="120" autocomplete="name"></p><p><label for="email">E-mail corporativo</label><br><input type="email" id="email" name="email" required maxlength="254" autocomplete="email"></p><p><label for="cargo">Cargo</label><br><input type="text" id="cargo" name="cargo" maxlength="100"></p><p><label for="perfil">Perfil de acesso</label><br><select id="perfil" name="perfil"><option value="administrador">Administrador da empresa</option><option value="gestor">Gestor</option><option value="funcionario">Funcionário</option></select></p><p><label for="senha">Senha inicial</label><br><input type="password" id="senha" name="senha" required minlength="12" autocomplete="new-password"></p><p><label for="ativo">Situação</label><br><select id="ativo" name="ativo"><option value="1">Ativo</option><option value="0">Inativo</option></select></p><button type="submit">Cadastrar funcionário</button></fieldset></form>
+    <p class="aviso-prototipo"><strong>Protótipo HTML — dados fictícios.</strong> Os formulários estão desativados e não salvam dados. As páginas demonstram diferentes perfis, sem controle de acesso nesta etapa.</p>
+    <p>Área prevista para o administrador. Empresa vinculada à sessão futura: Nuvem Exemplo.</p><form method="post"><fieldset disabled><legend>Demonstração — envio disponível na etapa PHP</legend><p class="campo-largo"><label for="nome">Nome completo</label><br><input type="text" id="nome" name="nome" required maxlength="120" autocomplete="name"></p><p><label for="email">E-mail corporativo</label><br><input type="email" id="email" name="email" required maxlength="254" autocomplete="email"></p><p><label for="cargo">Cargo</label><br><input type="text" id="cargo" name="cargo" maxlength="100"></p><p><label for="perfil">Perfil de acesso</label><br><select id="perfil" name="perfil"><option value="administrador">Administrador da empresa</option><option value="gestor">Gestor</option><option value="funcionario">Funcionário</option></select></p><p><label for="senha">Senha inicial</label><br><input type="password" id="senha" name="senha" required minlength="12" autocomplete="new-password"></p><p><label for="ativo">Situação</label><br><select id="ativo" name="ativo"><option value="1">Ativo</option><option value="0">Inativo</option></select></p><button type="submit">Cadastrar funcionário</button></fieldset></form>
   </main>
-  <footer><p>TaskCloud — Projeto acadêmico. Etapa 1: HTML.</p></footer>
+  <footer><p>TaskCloud — Projeto acadêmico. Etapa 2: CSS.</p></footer>
 </body>
 </html>
