@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+
+teste_conexao.php
+teste_backend.php
+verificar_login.php
+teste_senha.php
+
+*.log
+*.bak
+*.pem
+*.key
+
+.vscode/
+.idea/
